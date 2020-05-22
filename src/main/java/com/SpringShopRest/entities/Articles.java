@@ -2,10 +2,7 @@ package com.SpringShopRest.entities;
 
 import org.hibernate.validator.constraints.Length;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -46,6 +43,8 @@ public class Articles implements Serializable {
 
     @Column(name = "MIN_QUANTITY")
     private int minQty;
+    
+    private Double price;
 
     public Articles() {
 
@@ -134,5 +133,13 @@ public class Articles implements Serializable {
 
     public void setMinQty(int minQty) {
         this.minQty = minQty;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
 }
