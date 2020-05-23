@@ -2,7 +2,7 @@ package com.SpringShopRest.services.api;
 
 import com.SpringShopRest.entities.Articles;
 
-public interface ArticleService {
+public interface ArticlesService {
 
     Iterable<Articles> findAll(Integer processed);
 

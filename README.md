@@ -15,3 +15,8 @@ Store System repo: https://github.com/Manafov96/StoreSystem
  GET --> http://localhost:8080/api/v1/clients?processed=1 <br />
  POST --> http://localhost:8080/api/v1/clients/save <br />
  DELETE --> http://localhost:8080api/v1/clients/delete/{id} <br />
+ 
+  # Countries
+  GET --> http://localhost:8080/api/v1/countries?processed=1 <br />
+  POST --> http://localhost:8080/api/v1/countries/save <br />
+  DELETE --> http://localhost:8080api/v1/countries/delete/{id} <br />

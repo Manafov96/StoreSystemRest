@@ -1,7 +1,7 @@
 package com.SpringShopRest.controllers;
 
 import com.SpringShopRest.entities.Articles;
-import com.SpringShopRest.services.api.ArticleService;
+import com.SpringShopRest.services.api.ArticlesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 public class ArticlesController {
 
     @Autowired
-    private ArticleService articleService;
+    private ArticlesService articleService;
 
     @GetMapping("/api/v1/articles")
     public ResponseEntity<Iterable<Articles>> articles(@RequestParam("processed") Integer processed) {

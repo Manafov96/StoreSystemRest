@@ -1,16 +1,16 @@
 package com.SpringShopRest.services.impl;
 
 import com.SpringShopRest.entities.Articles;
-import com.SpringShopRest.repositories.ArticleRepository;
-import com.SpringShopRest.services.api.ArticleService;
+import com.SpringShopRest.repositories.ArticlesRepository;
+import com.SpringShopRest.services.api.ArticlesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ArticleServiceImpl implements ArticleService {
+public class ArticlesServiceImpl implements ArticlesService {
 
     @Autowired
-    private ArticleRepository articleRepository;
+    private ArticlesRepository articleRepository;
 
     @Override
     public Iterable<Articles> findAll(Integer processed) {
